@@ -3,15 +3,15 @@ package revmgo
 import (
     "fmt"
     "github.com/revel/revel"
-    "labix.org/v2/mgo"
-    "labix.org/v2/mgo/bson"
+    "gopkg.in/mgo.v2"
+    "gopkg.in/mgo.v2/bson"
     "reflect"
 )
 
 var (
     Session        *mgo.Session        // Global mgo Session
-    Dial           string              // http://godoc.org/labix.org/v2/mgo#Dial
-    Method         string              // clone, copy, new http://godoc.org/labix.org/v2/mgo#Session.New
+    Dial           string              // https://godoc.org/gopkg.in/mgo.v2#Dial
+    Method         string              // clone, copy, new https://godoc.org/gopkg.in/mgo.v2#Session.New
     mgoSessionDupl func() *mgo.Session // Holds a the function to call for a given Method
 )
 
